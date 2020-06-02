@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+     <!-- Header start -->
+        <header class="header">
+            <div class="wrapper">
+                
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            GENOTEK
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#!" class="header__link">неделю назад</a>
+                            </li>
+                            <li class="header__item header__item-person-logo">
+                                <a href="#!" class="header__link" id="sign-in"><img src="./img/svg/person.svg" alt="person"></a>
+                            </li>
+                            <li class="header__item header__item-media">
+                                <a href="#!" class="header__link">доступно только мне</a>
+                            </li>
+                        </ul>                       
+                    </nav>                    
+                </div>
+
+            </div>
+        </header>
+        <!-- Header end -->
+        <main class="main">
+            <!-- Intro start -->
+            <section class="intro">
+                <div class="wrapper">
+                    <h1 class="intro__title">
+                        Подарочный набор для сдачи ДНК-теста доставлен                
+                    </h1>
+                    <p class="intro__subtitle">
+                        Спасибо, что выбрали Genotek! На упаковке вы найдете подробную инструкцию как сдать ДНК-тест.
+                    </p>                
+                </div>
+                <div class="intro__promo-img "></div>
+            </section>
+            <div class="intro__list">
+
+                <!-- Intro first -->
+
+                <div class="intro__desc intro__desc-first intro__desc-first-active js-desc"><p class="intro__desc-link">Как подарить набор другу, чтобы он создал свой личный кабинет?</p><img src="./img/svg/arrow.svg" class="intro__desc-img" alt="description"></div>
+
+                <div class="content content__active"> 
+                    <div class="content__desc">
+                        <p class="content__desc-text">Все просто! На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен стираемой полосой.
+                        </p><br/>
+
+                        <p class="content__desc-text">Человеку, который получил ДНК-тест в подарок, нужно ввести временный логин и пароль на странице входа в личный кабинет <a href="#!" class="content__text-link">lk.genotek.ru.</a> После этого ему будет предложено зарегистрироваться или указать данные уже зарегистрированного пользователя, ввести номер пробирки и вызвать курьера для доставки биоматериала в лабораторию.
+                        </p><br/>
+
+                        <p class="content__desc-text">Обратите внимание, что по умолчанию вы не получите доступ к результатам ДНК-теста того, кому вы подарили тест. Но вы можете попросить вашего близкого поделиться с вами результатами в его настройках профиля.
+                        </p>
+                    </div>
+                    <div class="content__img content__desc"><img src="./img/box-personal.jpg" alt="
+                        how to make a test">
+                    </div>                   
+                </div>
+
+                <!-- Intro second -->
+
+                <div class="intro__desc intro__desc-second intro__desc-second-active js-desc"><p class="intro__desc-link">Хочу активировать ДНК-тест в этом личном кабинете</p><img src="./img/svg/arrow.svg" class="intro__desc-img" alt="description"></div>
+
+                <div class="content content__active"> 
+                    <div class="content__desc">
+
+                        <p class="content__desc-text">На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен стираемой полосой. Пожалуйста, введите их ниже. После ввода временных данных, вы сможете ввести номер пробирки и вызвать курьера для доставки биоматериала в лабораторию. 
+                        </p>
+
+                        <form class="login-form">
+                            <fieldset class="login-form__wrap">
+                                <p class="login-form__info">
+                                    <input type="text" name="user-name" placeholder="Логин" class="login-form__field" id="input__change-name">
+                                    <span class="login-form-name-ico"></span>
+                                    <input type="password" name="password" placeholder="Пароль" class="login-form__field" id="input__change-pass">
+                                    <span class="login-form-pass-ico"></span>
+                                    <button class="login-form__submit">Активировать ДНК-тест</button>
+                                </p>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                    <div class="content__img content__img-second content__desc"><img src="./img/box-personal.jpg" alt="
+                        how to make a test">
+                    </div>                   
+                </div>
+            </div>
+            <!-- Intro end -->                  
+        </main>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

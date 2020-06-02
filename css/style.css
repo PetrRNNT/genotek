@@ -1,0 +1,333 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "ALSStory";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    font-stretch: normal;
+    background-color: #f4f4f6;
+}
+.container {
+    max-width: 1300px;
+    border-radius: 8px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 4px 26px 0 #e1e1e1;
+    min-height: 815px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.wrapper {
+    max-width: 1060px;
+    margin: 0 0 0 45px;
+}
+
+
+/* Header */
+
+.header {
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    padding-bottom: 15px;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    padding-top: 30px;
+}
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__logo-link {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #6d7278;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.header__link {
+    font-size: 14px;
+    color: #6d7278;
+    text-decoration: none;
+    letter-spacing: normal;
+    bottom: 0;
+}
+.header__item:first-child {
+    margin-right: 15px;
+}
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: .75;
+}
+.header__item-person-logo {
+    display: flex;
+    margin-right: 8px;
+}
+
+/* Intro */
+
+.intro__title {
+    max-width: 714px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.27;
+    margin-bottom: 8px;
+}
+.intro__subtitle {
+    max-width: 450px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-bottom: 30px;
+}
+.intro__promo-img {
+    max-height: 450px;
+    width: 100%;
+    background: url(../img/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+    padding-bottom: 223px;
+}
+.intro__desc {
+    display: flex;
+    width: 100%;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;  
+    background-color: #142536;
+    color: #fff;
+    text-align: start;  
+    cursor: pointer;
+}
+.intro__desc:hover {
+    background-color: #22374b;
+}
+.intro__desc-first, .intro__desc-second {    
+    outline: none;
+    border: none;
+}
+.intro__desc-second {
+    border-top: solid 1px #405265;
+    border-bottom: solid 1px #405265;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.intro__desc-link {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 45px;
+    font-size: 22px;
+    line-height: 1.27;
+    cursor: pointer;
+    outline: none;
+}
+.intro__desc-img {
+    margin-right: 45px;
+}
+
+.content {
+    display: flex;
+    background-color: #142536;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #142536;
+}
+.content__active {
+    border-top: solid 1px #405265;
+    max-height: 0;
+}
+.content__desc {
+    max-width: 693px;
+    margin: 30px 118px 30px 45px;
+}
+.content__desc-text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+.content__text-link {
+    color: #5a88c1;
+}
+.content__text-link:hover {
+    opacity: .7;
+}
+.content__img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.login-form__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+.login-form__field {
+    width: 280px;
+    background-size: 20px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin-top: 30px;
+    padding-left: 0;
+    padding-bottom: 3px;
+    font-size: 18px;
+    color: #fff;
+}
+.login-form__submit {
+    width: 214px;
+    height: 50px;
+    background:  transparent;
+    border: 1px solid white;
+    border-radius: 29.5px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+}
+.login-form-name-ico, .login-form-pass-ico {
+    background: url(../img/svg/x.svg) no-repeat;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+}
+.login-form-name-ico {
+    top: 35px;
+    left: 266px;
+    display: none;
+}
+.login-form-pass-ico {
+    bottom: 88px;
+    left: 266px;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .content__desc {
+        margin: 30px 45px 30px 45px;
+        max-width: 480px;  
+    }
+    .intro__promo-img {
+        margin-top: 40px;
+    }
+    .intro__title {
+        margin-top: 20px;
+    }
+    .intro__subtitle {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin-top: 60px;
+        height: 100%;
+        display: contents;
+    }
+    .header__item-media {
+        display: none;
+    }
+    .wrapper {
+        margin: 0 15px 0 15px;
+    }
+    .intro__subtitle {
+        margin-bottom: 15px;
+    }
+    .intro__promo-img {
+        height: 220px;
+        padding-top: 0;    
+        padding-bottom: 0;
+    }
+    .intro__desc-second {
+        border-top: solid 1px #405265;
+        border-bottom: none;
+    }
+    .intro__desc-link {
+        padding-left: 9px;
+    }
+    .intro__desc-img {
+        margin-right: 15px;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .content:last-child {
+        margin-bottom: 40px;
+    }
+    .content, .content__active {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        widows: 100%;
+    }
+    .content__desc {
+        margin: 15px;
+    }
+    .content__img-second {
+        position: absolute;
+        bottom: 200px;
+        transform: translateX(-6%);
+    }
+    .login-form {
+        margin-top: 280px;
+    }
+    .login-form__field {
+        width: 100%;
+        margin-right: 15px;
+    }
+    .login-form__submit {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .login-form-name-ico {
+        top: 35px;
+        left: 327px;
+        display: none;
+    }
+    .login-form-pass-ico {
+        bottom: 102px;
+        left: 327px;
+        display: none;
+    }
+}
+@media screen and (max-width: 330px) {
+    .login-form__field {
+        width: 100%;
+        margin-right: 15px;
+    }
+    .login-form-name-ico {
+        top: 35px;
+        left: 274px;
+        display: none;
+    }
+    .login-form-pass-ico {
+        bottom: 102px;
+        left: 274px;
+        display: none;
+    }
+}
