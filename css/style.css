@@ -315,6 +315,22 @@ img {
         display: none;
     }
 }
+@media screen and (max-width: 360px) {
+    .login-form__field {
+        max-width: 100%;
+        margin-right: 15px;
+    }
+    .login-form-name-ico {
+        top: 35px;
+        left: 310px;
+        display: none;
+    }
+    .login-form-pass-ico {
+        bottom: 102px;
+        left: 310px;
+        display: none;
+    }
+}
 @media screen and (max-width: 330px) {
     .login-form__field {
         width: 100%;
